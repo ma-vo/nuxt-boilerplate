@@ -30,6 +30,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://marquez.co/docs/nuxt-optimized-images/
+    '@aceforth/nuxt-optimized-images',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -40,6 +42,17 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://sitemap.nuxtjs.org/guide/setup
+    '@nuxtjs/sitemap',
+    // https://github.com/nuxt-community/robots-module
+    [
+      '@nuxtjs/robots',
+      {
+        /* module options */
+      },
+    ],
+    // https://github.com/nuxt-community/svg-sprite-module
+    '@nuxtjs/svg-sprite',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -48,12 +61,20 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
+      lang: 'de',
     },
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  // Optimized Image configuration: https://marquez.co/docs/nuxt-optimized-images/configuration
+  optimizedImages: {
+    optimizeImages: true,
+  },
+
+  // scg sprite configuration: https://github.com/nuxt-community/svg-sprite-module#options
+  svgSprite: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
