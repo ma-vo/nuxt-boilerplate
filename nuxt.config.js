@@ -73,8 +73,11 @@ export default {
     optimizeImages: true,
   },
 
-  // scg sprite configuration: https://github.com/nuxt-community/svg-sprite-module#options
+  // svg sprite configuration: https://github.com/nuxt-community/svg-sprite-module#options
   svgSprite: {},
+
+  // storybook configuration: https://storybook.nuxtjs.org/options
+  storybook: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
