@@ -79,6 +79,12 @@ export default {
   // storybook configuration: https://storybook.nuxtjs.org/options
   storybook: {},
 
+  // sitemap configuration: https://www.npmjs.com/package/@nuxtjs/sitemap#sitemap-options
+  sitemap: {
+    hostname: 'https://example.com',
+    gzip: true,
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
